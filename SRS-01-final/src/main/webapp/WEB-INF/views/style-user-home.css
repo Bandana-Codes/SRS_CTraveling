@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+*, ::after, ::before {
+     box-sizing:none; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+.heading h1{
+    float: left;
+    color: white;
+    font-size: 2.0rem;
+    margin-top: -60px;
+    margin-left: 120px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.bg{
+    width: 60%;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-top: 450px;
+    background-image: url(resources/images/ship1.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 7px 5px rgb(168, 169, 170);
+    animation:slider 25s infinite ;
+    animation-delay: 10ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slider{
+    0%{ background-image: url(resources/images/ship2.jpg);}
+    25%{ background-image: url(resources/images/ship3.jpg);}
+    50%{ background-image: url(resources/images/ship4.jpg);}
+    100%{ background-image: url(resources/images/ship5.jpg);}
+}
+
+
+.h2{
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+.logo img{
+    height: 5rem;
+    width: 5rem;
+    
+}
+
+
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+}
+
+.logo img{
+    
+    height: 70px;
+    padding: 8px 15px;
+}
+
+#login img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    margin-top: -80px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;   
+  }
+  
+nav a {
+    background:
+      linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(0, 0, 0)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 2),
+        rgba(255, 0, 180, 2),
+        rgba(0, 100, 200, 2)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    
+  }  
+  
+a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+  
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 70px;
+    float: right;
+    margin-right: 30px;
+    display: none;
+}
+
+
+.booknow a {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    padding: 13px 25px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 1000px;
+    margin-left: 600px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.booknow a:hover{
+    color: black;
+    background: #2196f3;
+    box-shadow: 0 0 8px #2196f3, 0 0 35px #2196f3, 0 0 70px #2196f3;
+    border-radius: 25px;
+}
+
+.bg-image {
+    background-image: url("resources/images/ship6.jpg");
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */ 
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+    padding: 60px;
+    text-align: center;
+    height: 100px;
+  }
+
+  .bg-text h1{
+      margin-top: 20px;
+      font-size: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .bg-text p{
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  
